@@ -15,3 +15,5 @@ public class Homework2 {
         }
     }
 }
+
+//九九乘法表

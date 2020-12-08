@@ -46,3 +46,5 @@ public class FriendCounter {
         find_group(n,have_group,friends);
     }
 }
+
+//資數程設 - 好朋友圈子問題

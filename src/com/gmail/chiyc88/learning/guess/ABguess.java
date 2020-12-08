@@ -59,3 +59,5 @@ public class ABguess {
         return numbers;
     }
 }
+
+//幾A幾B猜測遊戲

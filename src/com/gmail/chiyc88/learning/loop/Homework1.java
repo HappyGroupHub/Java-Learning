@@ -17,3 +17,5 @@ public class Homework1 {
         }
     }
 }
+
+//九九乘法表簡易版
