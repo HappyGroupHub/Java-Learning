@@ -9,7 +9,7 @@ public class Employee {
         setHourlyRate(hourlyRate);
     }
 
-    public int caculateWage(int extraHours) {
+    public int calculateWage(int extraHours) {
         return baseSalary + (hourlyRate * extraHours);
     }
 
