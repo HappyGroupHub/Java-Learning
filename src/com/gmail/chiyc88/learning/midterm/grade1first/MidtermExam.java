@@ -1,4 +1,4 @@
-package com.gmail.chiyc88.learning.midterm;
+package com.gmail.chiyc88.learning.midterm.grade1first;
 
 import java.util.Scanner;
 
