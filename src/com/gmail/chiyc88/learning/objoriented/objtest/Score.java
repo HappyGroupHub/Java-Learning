@@ -1,4 +1,4 @@
-package com.gmail.chiyc88.learning.objtest;
+package com.gmail.chiyc88.learning.objoriented.objtest;
 
 public class Score {
     private int mathRate;
