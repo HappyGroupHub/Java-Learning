@@ -22,4 +22,11 @@ public class BmiCaculator {
             System.out.println("Your weight is within the normal range");
         }
     }
+
+
+
+    public Float calBMI(float height, float weight) {
+        float bmi = (float) (weight / Math.pow(height, 2));
+        return bmi;
+    }
 }
