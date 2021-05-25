@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Box3 box3 = new Box3();
+        Box[] boxes = { new Box1(), new Box2(), new Box3() };
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter object\'s length: ");
@@ -14,8 +14,11 @@ public class Main {
         System.out.println("Please enter object\'s height: ");
         int height = Integer.parseInt(scanner.next());
         System.out.println("Length: " + length + ", width: " + width + ", height: " + height);
-        if (box3.validate(length, width, height)) {
-            System.out.println(box3.getName() + box3.getPrice());
+        for (Box box : boxes) {
+            if (box.validate(length, width, height)) {
+                System.out.println("Use: " + box.getName() + "\nPrice: " + box.getPrice());
+                break;
+            }
         }
     }
 }

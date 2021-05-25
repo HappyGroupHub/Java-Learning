@@ -16,4 +16,5 @@ public class Customer {
     public void print() {
         System.out.println(customerID + " " + cost + " " + discount + " " + sum);
     }
+
 }
