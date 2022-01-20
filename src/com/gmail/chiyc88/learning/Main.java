@@ -1,32 +1,20 @@
 package com.gmail.chiyc88.learning;
 
-import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter 5 numbers: ");
-        int[] input = new int[5];
-        for (int i = 0; i <=4; i++) {
-            input[i] = scanner.nextInt();
+        Random random = new Random();
+        int count = 0;
+        for (int i = 0; i < 5000; i++) {
+            int one = random.nextInt(6 - 1);
+            int two = random.nextInt(6 - 1);
+            if ((one == 1 && two == 2) || one == 2 && two == 1) {
+                count += 1;
+            }
         }
-        int sum = 0;
-        for (int i = 0; i<= 4; i++) {
-            sum = sum + input[i];
-        }
-        int avg = sum / input.length;
-
-        double[] sbCal = new double[5];
-        double sb = 0;
-        for (int i = 0; i <= 4; i++) {
-            sbCal[i] = Math.pow(input[i] - avg, 2) / 5;
-            sb = sb + sbCal[i];
-        }
-        sb = Math.sqrt(sb);
-        double[] zScore = new double[5];
-        for (int i = 0; i <= 4; i++) {
-            zScore[i] = (input[i] - avg) / sb;
-            System.out.print(zScore[i] + ", ");
-        }
+        double prob = count / 5000D;
+        System.out.println("次數: " + count);
+        System.out.println("機率: " + prob);
     }
 }
